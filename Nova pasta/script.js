@@ -5,8 +5,8 @@ botaoQuestao1.addEventListener("click", function(event){
     let radios = document.getElementsByName("questao1")
     let gabarito1 = document.getElementById("gabarito1")
     for (let i = 0, length = radios.length; i < length; i++) {
-        //radios[i].parentElement.classList.remove("certa")
-        //radios[i].parentElement.classList.remove("errada")
+       radios[i].parentElement.classList.remove("certa")
+        radios[i].parentElement.classList.remove("errada")
         
         if (radios[i].checked) {
             if(radios[i].value == 'B'){
